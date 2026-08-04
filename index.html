@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial | EM Soluções Climatização</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0099FF',
+                            lightBlue: '#33BBFF',
+                            darkBlue: '#001A33',
+                            gray: '#7A8B99',
+                            darkGray: '#1E293B',
+                            card: '#0F172A',
+                            bg: '#050B14'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050B14; color: #F8FAFC; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        .glass-panel { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(0, 153, 255, 0.25); }
+        .glass-panel:hover { border-color: rgba(0, 153, 255, 0.5); }
+        .tab-active { border-bottom: 3px solid #0099FF; color: #33BBFF; background: rgba(0, 153, 255, 0.08); }
+        .tab-inactive { color: #94A3B8; border-bottom: 3px solid transparent; }
+        .image-zoom { transition: transform 0.5s ease; }
+        .image-zoom:hover { transform: scale(1.03); }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white">
+
+    <!-- Header Fixo -->
+    <header class="fixed w-full top-0 z-50 glass-panel border-b border-brand-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-xl font-bold tracking-wider text-white">EM <span class="text-brand-blue">SOLUÇÕES</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#comparador" class="text-gray-300 hover:text-brand-lightBlue transition-colors">Estética vs Comum</a>
+                <a href="#ambientes" class="text-gray-300 hover:text-brand-lightBlue transition-colors">Mapeamento 08 Ambientes</a>
+                <a href="#tecnologia" class="text-gray-300 hover:text-brand-lightBlue transition-colors">Tecnologia LG R32</a>
+                <a href="#proposta" class="text-gray-300 hover:text-brand-lightBlue transition-colors">Investimento</a>
+            </div>
+            <a href="#proposta" class="bg-brand-blue hover:bg-brand-lightBlue text-brand-darkBlue px-5 py-2 rounded-lg font-bold text-sm transition-all shadow-[0_0_15px_rgba(0,153,255,0.4)]">
+                Ver Proposta
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 lg:pt-44 lg:pb-32 overflow-hidden bg-brand-bg">
+        <div class="absolute inset-0 z-0 opacity-25">
+            <img src="https://i.postimg.cc/Qx8t3Xm1/01.jpg" alt="Arquitetura Alto Padrão" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-bg via-brand-bg/80 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-blue/10 border border-brand-blue/30 text-brand-lightBlue text-xs font-semibold uppercase tracking-widest mb-6">
+                <span>Engenharia Térmica de Alto Padrão</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight tracking-tight">
+                Proposta Comercial Exclusiva<br>Residência de <span class="text-brand-blue italic">Marcus Gurgel</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                Sistema avançado Multi-Split LG com evaporadoras Cassete 1 Via Slim. Climatização invisível, silêncio e integração arquitetônica perfeita para 08 ambientes.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#ambientes" class="bg-brand-blue hover:bg-brand-lightBlue text-brand-darkBlue font-bold px-8 py-4 rounded-xl transition-all shadow-[0_0_25px_rgba(0,153,255,0.4)] flex items-center gap-2">
+                    <i data-lucide="layout-grid" class="w-5 h-5"></i> Explorar os 08 Ambientes
+                </a>
+                <a href="#tecnologia" class="glass-panel text-white hover:border-brand-blue font-semibold px-8 py-4 rounded-xl transition-all flex items-center gap-2">
+                    <i data-lucide="cpu" class="w-5 h-5 text-brand-blue"></i> Destaques Técnicos LG
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: O Padrão LG Multi-Split & Múltiplos Espaços -->
+    <section class="py-20 bg-brand-darkGray/40 border-y border-brand-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Arquitetura de Conectividade</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Uma Única Unidade Externa para Múltiplos Ambientes</h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        O sistema Multi-Split LG permite conectar múltiplas unidades internas de alta sofisticação a apenas uma condensadora externa. No seu projeto, utilizamos <strong>02 Condensadoras Quadri-Split Inverter (30.000 BTU/h cada)</strong> estrategicamente posicionadas nas áreas de serviço, alimentando de forma independente os 08 ambientes.
+                    </p>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <div class="p-1 bg-brand-blue/10 rounded text-brand-blue mt-1"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <div><strong>Eliminação de Poluição Visual Externa:</strong> Menos condensadoras na fachada, preservando a estética arquitetônica do imóvel.</div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="p-1 bg-brand-blue/10 rounded text-brand-blue mt-1"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <div><strong>Eficiência Inverter Avançada:</strong> O compressor ajusta a rotação conforme a demanda real de cada cômodo ligado, gerando economia de energia.</div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="p-1 bg-brand-blue/10 rounded text-brand-blue mt-1"><i data-lucide="check" class="w-4 h-4"></i></div>
+                            <div><strong>Versatilidade de Portfólio:</strong> Tecnologia capaz de operar com diversos tipos de evaporadoras, com foco absoluto aqui no modelo Cassete 1-Via embutido.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glass-panel p-4 rounded-2xl border-brand-blue/30 shadow-2xl">
+                    <img src="https://i.postimg.cc/15qWyQzF/02.webp" alt="Múltiplos Espaços LG Multi-Split" class="rounded-xl w-full h-auto object-cover image-zoom">
+                    <p class="text-xs text-center text-gray-400 mt-3 italic">Esquema conceitual de distribuição frigorígena multi-ambientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparador Interativo UX: Cassete 1-Via vs Hi-Wall -->
+    <section id="comparador" class="py-20 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Análise Estética & Arquitetônica</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Por que o Cassete 1-Via é Escolha de Alto Padrão?</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Compare o impacto visual do equipamento tradicional de parede em relação ao Cassete 1-Via embutido no gesso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <!-- Hi-Wall Tradicional -->
+                <div class="glass-panel p-8 rounded-2xl border-red-500/30 flex flex-col justify-between opacity-80 hover:opacity-100 transition-opacity">
+                    <div>
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-300">Split Hi-Wall Tradicional</h3>
+                            <span class="bg-red-500/10 text-red-400 text-xs font-bold px-3 py-1 rounded-full border border-red-500/20">Não Recomendado</span>
+                        </div>
+                        <div class="bg-gray-900 rounded-xl mb-6 overflow-hidden relative border border-gray-800">
+                            <img src="https://i.postimg.cc/DZNgKjkS/03.jpg" alt="Split Aparente" class="w-full h-auto object-contain opacity-50">
+                            <div class="absolute inset-0 bg-red-950/30 flex items-center justify-center">
+                                <span class="bg-brand-darkBlue/90 px-4 py-2 rounded-lg text-red-300 text-sm font-semibold border border-red-500/40">Ocupa espaço nobre da parede</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-gray-400 text-sm mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="x-circle" class="text-red-400 w-4 h-4"></i> Aparelho aparente que interfere na decoração e quadros</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x-circle" class="text-red-400 w-4 h-4"></i> Limita opções de marcenaria e cabeceiras</li>
+                            <li class="flex items-center gap-2"><i data-lucide="x-circle" class="text-red-400 w-4 h-4"></i> Fluxo de ar restrito e concentrado em um ponto</li>
+                        </ul>
+                    </div>
+                    <div class="text-xs text-gray-500 border-t border-gray-800 pt-4">Gera poluição visual e quebra a harmonia de ambientes sofisticados.</div>
+                </div>
+
+                <!-- Cassete 1-Via Proposto -->
+                <div class="glass-panel p-8 rounded-2xl border-brand-blue shadow-[0_0_30px_rgba(0,153,255,0.15)] flex flex-col justify-between relative">
+                    <div class="absolute -top-4 -right-4 bg-brand-blue text-brand-darkBlue font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">
+                        Solução do Seu Projeto
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-bold text-white">LG Cassete 1-Via Slim</h3>
+                            <span class="bg-brand-blue/20 text-brand-lightBlue text-xs font-bold px-3 py-1 rounded-full border border-brand-blue/30">Perfil 132mm</span>
+                        </div>
+                        <div class="h-64 bg-gray-900 rounded-xl mb-6 overflow-hidden relative border border-brand-blue/30">
+                            <img src="https://i.postimg.cc/YqYJbgYL/04.webp" alt="Cassete 1-Via embutido" class="w-full h-full object-cover image-zoom">
+                        </div>
+                        <ul class="space-y-3 text-gray-300 text-sm mb-6">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-brand-blue w-4 h-4"></i> <strong>Corpo Ultra Slim (132 mm):</strong> Encaixa perfeitamente em rebaixos de gesso estreitos</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-brand-blue w-4 h-4"></i> <strong>Paredes 100% Livres:</strong> Quadros, espelhos e marcenaria sem interferência</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-brand-blue w-4 h-4"></i> <strong>Elegância Discreta:</strong> Apenas a grelha sofisticada fica visível no teto</li>
+                        </ul>
+                    </div>
+                    <div class="text-xs text-brand-lightBlue border-t border-brand-blue/20 pt-4 font-medium">A escolha definitiva dos principais arquitetos e designers de interiores.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Detalhada: O Equipamento Cassete 1-Via -->
+    <section class="py-20 bg-brand-darkGray/30 border-y border-brand-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Engenharia e Detalhes Construtivos</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Diferenciais do Cassete 1-Via LG</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Conheça a tecnologia de ponta embutida em cada detalhe do equipamento selecionado para sua residência.</p>
+            </div>
+
+            <!-- Grid de Detalhes Técnicos com Imagens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Altura Compacta -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="rounded-xl overflow-hidden mb-4 border border-brand-blue/20 bg-gray-900">
+                            <img src="https://i.postimg.cc/nLcgFPgZ/05.webp" alt="Altura Compacta 132mm" class="w-full h-auto object-contain image-zoom">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Altura de Apenas 132mm</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            O design super compacto do corpo com apenas 13.2 cm de altura permite a instalação em espaços de forro extremamente reduzidos, sem a necessidade de rebaixos exagerados no gesso da residência.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-800 text-xs text-brand-lightBlue font-semibold">
+                        ✓ Máxima flexibilidade arquitetônica
+                    </div>
+                </div>
+
+                <!-- Card 2: Aletas Ajustáveis e Fluxo Amplo -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="rounded-xl overflow-hidden mb-4 border border-brand-blue/20 bg-gray-900">
+                            <img src="https://i.postimg.cc/SR8t1F2X/06.webp" alt="Aleta Ajustável" class="w-full h-auto object-contain image-zoom">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Aletas com Ângulos Ajustáveis</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            As aletas possuem controle preciso de abertura em múltiplos níveis (até 120°), evitando correntes de ar diretas sobre os ocupantes e garantindo uma climatização homogênea em todo o ambiente.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-800 text-xs text-brand-lightBlue font-semibold">
+                        ✓ Conforto térmico sem rajadas incômodas
+                    </div>
+                </div>
+
+                <!-- Card 3: Instalação Flexível e Visão de Sala -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="rounded-xl overflow-hidden mb-4 border border-brand-blue/20 bg-gray-900">
+                            <img src="https://i.postimg.cc/QMtYGW9b/07.webp" alt="Instalação Flexível" class="w-full h-auto object-contain image-zoom">
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Integração em Salas e Living</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Projetado para se fundir perfeitamente ao teto de áreas sociais e íntimas. A grelha de insuflamento foi desenhada para otimizar o alcance do ar em ambientes amplos e integrados.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-800 text-xs text-brand-lightBlue font-semibold">
+                        ✓ Acabamento impecável e sofisticado
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapeador Interativo dos 08 Ambientes -->
+    <section id="ambientes" class="py-20 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Mapeamento Técnico do Projeto</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Os 08 Ambientes Climatizados</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Divididos em 02 Circuitos independentes com condensadoras Quadri-Split Inverter R32.</p>
+            </div>
+
+            <!-- Seletor de Circuitos (Abas) -->
+            <div class="flex justify-center mb-10">
+                <div class="inline-flex glass-panel p-1.5 rounded-xl border border-brand-blue/30 gap-2">
+                    <button onclick="switchCircuit(1)" id="tab-c1" class="px-6 py-3 rounded-lg font-bold text-sm transition-all tab-active flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-4 h-4"></i> Circuito 01 (Área Esquerda - 4 Ambientes)
+                    </button>
+                    <button onclick="switchCircuit(2)" id="tab-c2" class="px-6 py-3 rounded-lg font-bold text-sm transition-all tab-inactive flex items-center gap-2">
+                        <i data-lucide="cpu" class="w-4 h-4"></i> Circuito 02 (Área Direita - 4 Ambientes)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Circuito 01 Container -->
+            <div id="circuito-1" class="space-y-8 animate-fade-in">
+                <!-- Info Condensadora -->
+                <div class="glass-panel p-6 rounded-2xl border-brand-blue/40 bg-gradient-to-r from-brand-card to-brand-darkBlue flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-4">
+                        <div class="p-4 bg-brand-blue/10 rounded-xl text-brand-blue"><i data-lucide="box" class="w-8 h-8"></i></div>
+                        <div>
+                            <span class="text-xs text-brand-lightBlue font-bold uppercase tracking-wider">Unidade Externa Principal</span>
+                            <h3 class="text-xl font-bold text-white">Condensadora Quadri-Split Inverter 30.000 BTU/h (R32 Quente/Frio)</h3>
+                            <p class="text-sm text-gray-400">Localizada na Área de Serviço Esquerda | Alimenta 4 Ambientes Simultaneamente</p>
+                        </div>
+                    </div>
+                    <div class="text-right bg-brand-bg px-4 py-3 rounded-xl border border-brand-blue/20">
+                        <span class="text-xs text-gray-400 block">Capacidade Total Circuito</span>
+                        <span class="text-lg font-bold text-brand-lightBlue">30.000 BTU/h</span>
+                    </div>
+                </div>
+
+                <!-- Grid de Ambientes C1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Copa / Cozinha -->
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-blue flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-lg font-bold text-white">Copa / Cozinha</h4>
+                                <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2.5 py-1 rounded-full border border-brand-blue/30 font-semibold">12 m²</span>
+                            </div>
+                            <div class="space-y-2 mb-4 text-sm text-gray-300">
+                                <p class="flex items-center gap-2"><i data-lucide="wind" class="w-4 h-4 text-brand-blue"></i> <strong>1x Cassete 1-Via 7.000 BTU/h</strong></p>
+                                <p class="flex items-center gap-2 text-gray-400"><i data-lucide="volume-2" class="w-4 h-4"></i> Operação Super Silenciosa (35 dB)</p>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500 pt-3 border-t border-gray-800">Ideal para áreas gourmet e cocção.</div>
+                    </div>
+
+                    <!-- Sala de Jantar & Estar Integrada -->
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-blue lg:col-span-2 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold text-white">Sala de Jantar & Estar Integrada</h4>
+                                <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2.5 py-1 rounded-full border border-brand-blue/30 font-semibold">46 m²</span>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 text-sm text-gray-300">
+                                <div class="bg-brand-bg/50 p-3 rounded-xl border border-brand-blue/20">
+                                    <p class="font-bold text-brand-lightBlue mb-1">2x Cassete 1-Via 12.000 BTU/h</p>
+                                    <p class="text-xs text-gray-400">Total: 24.000 BTU/h distribuídos simetricamente no ambiente.</p>
+                                </div>
+                                <div class="bg-brand-bg/50 p-3 rounded-xl border border-brand-blue/20">
+                                    <p class="font-bold text-brand-lightBlue mb-1">Conforto Homogêneo</p>
+                                    <p class="text-xs text-gray-400">Evita bolsões de calor em grandes vãos sociais.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500 pt-3 border-t border-gray-800">Cálculo balanceado para convivência de alto padrão.</div>
+                    </div>
+
+                    <!-- Dormitório Maior Lado Direito -->
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-blue flex flex-col justify-between lg:col-span-3">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div>
+                                <div class="flex items-center gap-3 mb-1">
+                                    <h4 class="text-lg font-bold text-white">Dormitório Maior (Lado Direito)</h4>
+                                    <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2.5 py-1 rounded-full border border-brand-blue/30 font-semibold">12 m²</span>
+                                </div>
+                                <p class="text-sm text-gray-300 flex items-center gap-2"><i data-lucide="wind" class="w-4 h-4 text-brand-blue"></i> 1x Cassete 1-Via 9.000 BTU/h com Modo Noturno Silencioso (35-37 dB)</p>
+                            </div>
+                            <span class="text-xs bg-brand-darkBlue px-3 py-1.5 rounded-lg border border-brand-blue/30 text-brand-lightBlue">Quente & Frio Inverter</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Circuito 02 Container -->
+            <div id="circuito-2" class="space-y-8 hidden animate-fade-in">
+                <!-- Info Condensadora -->
+                <div class="glass-panel p-6 rounded-2xl border-brand-blue/40 bg-gradient-to-r from-brand-card to-brand-darkBlue flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-4">
+                        <div class="p-4 bg-brand-blue/10 rounded-xl text-brand-blue"><i data-lucide="box" class="w-8 h-8"></i></div>
+                        <div>
+                            <span class="text-xs text-brand-lightBlue font-bold uppercase tracking-wider">Unidade Externa Secundária</span>
+                            <h3 class="text-xl font-bold text-white">Condensadora Quadri-Split Inverter 30.000 BTU/h (R32 Quente/Frio)</h3>
+                            <p class="text-sm text-gray-400">Localizada na Área de Serviço Direita | Alimenta 4 Ambientes Simultaneamente</p>
+                        </div>
+                    </div>
+                    <div class="text-right bg-brand-bg px-4 py-3 rounded-xl border border-brand-blue/20">
+                        <span class="text-xs text-gray-400 block">Capacidade Total Circuito</span>
+                        <span class="text-lg font-bold text-brand-lightBlue">30.000 BTU/h</span>
+                    </div>
+                </div>
+
+                <!-- Grid de Ambientes C2 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-gray flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-base font-bold text-white">Dormitório Menor (Dir.)</h4>
+                                <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2 py-0.5 rounded font-semibold">9 m²</span>
+                            </div>
+                            <p class="text-sm text-gray-300 font-medium mb-3">1x Cassete 7.000 BTU/h</p>
+                        </div>
+                        <p class="text-[11px] text-gray-400 border-t border-gray-800 pt-2">Silêncio absoluto para descanso.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-gray flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-base font-bold text-white">Dormitório Maior (Esq.)</h4>
+                                <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2 py-0.5 rounded font-semibold">12 m²</span>
+                            </div>
+                            <p class="text-sm text-gray-300 font-medium mb-3">1x Cassete 9.000 BTU/h</p>
+                        </div>
+                        <p class="text-[11px] text-gray-400 border-t border-gray-800 pt-2">Suite master com controle individual.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-gray flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-base font-bold text-white">Dormitório Menor (Esq.)</h4>
+                                <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2 py-0.5 rounded font-semibold">9 m²</span>
+                            </div>
+                            <p class="text-sm text-gray-300 font-medium mb-3">1x Cassete 7.000 BTU/h</p>
+                        </div>
+                        <p class="text-[11px] text-gray-400 border-t border-gray-800 pt-2">Eficiência energética máxima.</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-gray flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-3">
+                                <h4 class="text-base font-bold text-white">Despensa (Esq.)</h4>
+                                <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-2 py-0.5 rounded font-semibold">12 m²</span>
+                            </div>
+                            <p class="text-sm text-gray-300 font-medium mb-3">1x Cassete 7.000 BTU/h</p>
+                        </div>
+                        <p class="text-[11px] text-gray-400 border-t border-gray-800 pt-2">Controle térmico de mantimentos.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Destaques Tecnológicos LG R32 & Inteligência -->
+    <section id="tecnologia" class="py-20 bg-brand-darkGray/30 border-y border-brand-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Tecnologia Embarcada LG</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Inovações que Garantem Excelência</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Equipamentos de última geração projetados para durabilidade, ecologia e automação residencial.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:border-brand-blue transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-blue/10 rounded-2xl flex items-center justify-center mb-6 text-brand-blue group-hover:scale-110 transition-transform border border-brand-blue/30">
+                        <i data-lucide="leaf" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Gás Ecológico R-32</h3>
+                    <p class="text-sm text-gray-400">Fluido refrigerante de altíssima eficiência, com potencial de aquecimento global reduzido e menor impacto ambiental.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:border-brand-blue transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-blue/10 rounded-2xl flex items-center justify-center mb-6 text-brand-blue group-hover:scale-110 transition-transform border border-brand-blue/30">
+                        <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Black Fin (100% Cobre)</h3>
+                    <p class="text-sm text-gray-400">Serpentinas com revestimento anticorrosivo de alta durabilidade, testadas contra maresia e intempéries nas unidades externas.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:border-brand-blue transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-blue/10 rounded-2xl flex items-center justify-center mb-6 text-brand-blue group-hover:scale-110 transition-transform border border-brand-blue/30">
+                        <i data-lucide="droplet" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Bomba de Dreno Embutida</h3>
+                    <p class="text-sm text-gray-400">Eleva a água condensada em até 700mm, garantindo escoamento perfeito e seguro no interior do rebaixo de gesso.</p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:border-brand-blue transition-colors">
+                    <div class="w-16 h-16 mx-auto bg-brand-blue/10 rounded-2xl flex items-center justify-center mb-6 text-brand-blue group-hover:scale-110 transition-transform border border-brand-blue/30">
+                        <i data-lucide="wifi" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">LG ThinQ™ (Wi-Fi/Alexa)</h3>
+                    <p class="text-sm text-gray-400">Conectividade inteligente integrada. Monitore e controle a temperatura de qualquer lugar via smartphone ou comandos de voz.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Diferenciais EM Soluções -->
+    <section class="py-20 bg-brand-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-panel p-8 md:p-12 rounded-3xl border-brand-blue/40 relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-brand-blue/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="max-w-3xl">
+                    <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Padrão Rigoroso de Engenharia</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Nosso Compromisso com a Qualidade Técnica</h2>
+                    <p class="text-gray-300 leading-relaxed mb-8">
+                        Em projetos de alto padrão, a qualidade da instalação é tão importante quanto a escolha do equipamento. A <strong>EM Soluções</strong> executa protocolos rigorosos que asseguram a vida útil e a performance máxima do seu sistema.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4 bg-brand-bg/60 p-4 rounded-xl border border-brand-blue/20">
+                            <div class="p-2 bg-brand-blue/10 rounded-lg text-brand-blue"><i data-lucide="gauge" class="w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Vácuo Profundo (< 500 Microns)</h4>
+                                <p class="text-xs text-gray-400">Utilização de vacuômetros digitais para remoção total de umidade e gases condensáveis.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-brand-bg/60 p-4 rounded-xl border border-brand-blue/20">
+                            <div class="p-2 bg-brand-blue/10 rounded-lg text-brand-blue"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Pressurização com Nitrogênio</h4>
+                                <p class="text-xs text-gray-400">Teste de estanqueidade sob alta pressão para garantir ausência absoluta de vazamentos nas tubulações.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela Comercial Transparente & Simulador de Investimento -->
+    <section id="proposta" class="py-20 bg-brand-darkGray/40 border-t border-brand-blue/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <span class="text-brand-blue font-bold tracking-widest uppercase text-xs mb-2 block">Proposta Comercial Definitiva</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">Investimento do Projeto</h2>
+                <p class="text-gray-400">Transparência financeira e condições especiais para fechamento.</p>
+            </div>
+
+            <div class="glass-panel rounded-3xl border-brand-blue/40 shadow-2xl overflow-hidden">
+                
+                <!-- Cabeçalho do Card Financeiro -->
+                <div class="bg-brand-darkBlue p-6 md:p-8 border-b border-brand-blue/30 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-brand-blue/10 rounded-2xl text-brand-blue border border-brand-blue/30">
+                            <span class="font-bold text-white">EM</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-lg">EM Soluções | Climatização</h3>
+                            <p class="text-xs text-gray-400">CNPJ: 65.063.813/0001-76 | Estado de São Paulo</p>
+                        </div>
+                    </div>
+                    <div class="text-left md:text-right">
+                        <span class="text-xs text-gray-400 block">Garantia da Instalação</span>
+                        <span class="text-sm font-bold text-brand-lightBlue">01 Ano de Garantia Integral</span>
+                    </div>
+                </div>
+
+                <!-- Corpo da Tabela -->
+                <div class="p-6 md:p-10 space-y-8">
+                    
+                    <!-- Item 1: Equipamentos -->
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-gray-800 gap-4">
+                        <div>
+                            <span class="text-xs text-brand-blue font-bold uppercase tracking-wider block mb-1">Equipamentos LG + Logística</span>
+                            <h4 class="text-xl font-bold text-white">Sistema Multi-Split R32 (8x Cassetes + 2x Condensadoras Quadri) + Frete Especializado</h4>
+                            <p class="text-xs text-gray-400 mt-1">Prazo de entrega dos equipamentos: 3 a 6 dias úteis.</p>
+                        </div>
+                        <div class="text-left md:text-right w-full md:w-auto bg-brand-bg/50 p-4 rounded-xl border border-brand-blue/10 md:bg-transparent md:p-0 md:border-0">
+                            <p class="text-2xl md:text-3xl font-serif font-bold text-white">R$ 57.502,50</p>
+                            <p class="text-xs text-brand-lightBlue font-medium mt-1">Equipamentos: R$ 56.100,00 | Frete: R$ 1.402,50</p>
+                            <p class="text-[11px] text-gray-400 mt-0.5">Parcelamento Cartão: Até 10x de R$ 5.750,25 sem juros (ou até 12x)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Mão de Obra -->
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-6 border-b border-gray-800 gap-4">
+                        <div>
+                            <span class="text-xs text-brand-blue font-bold uppercase tracking-wider block mb-1">Mão de Obra & Materiais Técnicos</span>
+                            <h4 class="text-xl font-bold text-white">Instalação Especializada + Materiais de Infraestrutura Premium</h4>
+                            <p class="text-xs text-gray-400 mt-1">Inclui tubulação de cobre isolada, cabos de comando, drenos e testes de vácuo/pressão.</p>
+                        </div>
+                        <div class="text-left md:text-right w-full md:w-auto bg-brand-bg/50 p-4 rounded-xl border border-brand-blue/10 md:bg-transparent md:p-0 md:border-0">
+                            <p class="text-2xl md:text-3xl font-serif font-bold text-white">R$ 24.608,03</p>
+                            <p class="text-xs text-gray-300 font-medium mt-1">Condição: 50% Sinal para Execução + 50% Conclusão</p>
+                        </div>
+                    </div>
+
+                    <!-- Valor Total Destaque -->
+                    <div class="bg-gradient-to-r from-brand-blue/20 via-brand-card to-brand-darkBlue p-6 md:p-8 rounded-2xl border border-brand-blue/40 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div>
+                            <span class="text-xs text-brand-lightBlue font-bold uppercase tracking-widest block mb-1">Valor Total do Projeto</span>
+                            <h3 class="text-2xl font-bold text-white">Investimento Completo de Climatização</h3>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <span class="text-4xl md:text-5xl font-serif font-bold text-white">R$ 82.110,53</span>
+                        </div>
+                    </div>
+
+                    <!-- Botão de Aceite Instantâneo WhatsApp -->
+                    <div class="pt-4 text-center">
+                        <button onclick="sendWhatsAppApproval()" class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-brand-blue hover:bg-brand-lightBlue text-brand-darkBlue px-10 py-5 rounded-2xl font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_30px_rgba(0,153,255,0.4)]">
+                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                            Aprovar Proposta Comercial pelo WhatsApp
+                        </button>
+                        <p class="text-gray-400 text-xs mt-4">Ao clicar, você será conectado diretamente ao WhatsApp da nossa empresa responsável (+55 11 97141-8110) para formalização do contrato.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-brand-bg py-16 border-t border-brand-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">EM <span class="text-brand-blue">SOLUÇÕES</span></h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Especialistas em Climatização Residencial e Comercial de Alto Padrão em todo o Estado de São Paulo.</p>
+                    <p class="text-xs text-gray-500">CNPJ: 65.063.813/0001-76</p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-serif text-lg">Canais de Contato</h4>
+                    <ul class="space-y-3 text-gray-300 text-sm">
+                        <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-brand-blue"></i> +55 (11) 97141-8110</li>
+                        <li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-brand-blue"></i> magalhaes.solution@gmail.com</li>
+                        <li class="flex items-center gap-3"><i data-lucide="instagram" class="w-4 h-4 text-brand-blue"></i> @emsolucoes.climatizacao</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-serif text-lg">Garantia & Especializada</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">Mão de obra especializada com instrumentação de ponta e rigor técnico absoluto em cada conexão frigorígena.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-3 py-1 rounded-full border border-brand-blue/30 font-semibold">LG Multi-Split</span>
+                        <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-3 py-1 rounded-full border border-brand-blue/30 font-semibold">R32 Ecológico</span>
+                        <span class="text-xs bg-brand-blue/10 text-brand-lightBlue px-3 py-1 rounded-full border border-brand-blue/30 font-semibold">Inverter</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-xs">
+                &copy; 2026 EM Soluções Climatização. Todos os direitos reservados. Desenvolvido para alta conversão comercial.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Inicializa ícones Lucide
+        lucide.createIcons();
+
+        // Alternância de Circuitos (Abas)
+        function switchCircuit(num) {
+            const c1 = document.getElementById('circuito-1');
+            const c2 = document.getElementById('circuito-2');
+            const tab1 = document.getElementById('tab-c1');
+            const tab2 = document.getElementById('tab-c2');
+
+            if(num === 1) {
+                c1.classList.remove('hidden');
+                c2.classList.add('hidden');
+                tab1.className = "px-6 py-3 rounded-lg font-bold text-sm transition-all tab-active flex items-center gap-2";
+                tab2.className = "px-6 py-3 rounded-lg font-bold text-sm transition-all tab-inactive flex items-center gap-2";
+            } else {
+                c2.classList.remove('hidden');
+                c1.classList.add('hidden');
+                tab2.className = "px-6 py-3 rounded-lg font-bold text-sm transition-all tab-active flex items-center gap-2";
+                tab1.className = "px-6 py-3 rounded-lg font-bold text-sm transition-all tab-inactive flex items-center gap-2";
+            }
+        }
+
+        // Envio para WhatsApp com mensagem preenchida
+        function sendWhatsAppApproval() {
+            const phone = "5511971418110";
+            const text = "Olá EM Soluções! Analisei a proposta comercial atualizada para o sistema LG Multi-Split Cassete 1-Via (08 ambientes). Gostaria de confirmar a aprovação do projeto no valor de R$ 82.110,53 e prosseguir com o contrato.";
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/${phone}?text=${encodedText}`, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+
